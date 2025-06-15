@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
 import { motion } from "framer-motion";
 
-emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+emailjs.init("B7Uz6AucWA8HFU9ag");
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -43,8 +43,8 @@ const Contact = () => {
 
     try {
       const response = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        "service_fkjtapa",
+        "template_sor0fs1]]",
         {
           from_name: formData.name,
           to_name: "Monil",

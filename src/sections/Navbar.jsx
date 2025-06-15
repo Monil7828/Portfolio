@@ -55,7 +55,7 @@ const Navbar = () => {
           {/* Logo */}
           <motion.a
             href="/"
-            className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-indigo-700 hover:from-purple-600 hover:to-indigo-600"
+            className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-purple-700 hover:from-purple-700 hover:to-amber-600"
             whileHover={{ scale: 1.05 }}
           >
             Monil
