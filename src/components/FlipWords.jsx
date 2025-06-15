@@ -84,6 +84,3 @@ export const FlipWords = ({ words, duration = 3000, className }) => {
     </AnimatePresence>
   );
 };
-
-
-export default FlipWords;

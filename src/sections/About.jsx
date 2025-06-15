@@ -2,14 +2,13 @@ import { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
-import  Frameworks  from "../components/FrameWorks.jsx";
-import { transform } from "motion/react";
+import { Frameworks } from "../components/FrameWorks";
 
 const About = () => {
   const grid2Container = useRef();
   return (
     <section className="c-space section-spacing" id="about">
-      <h2 className="text-heading text-slate-300">About Me</h2>
+      <h2 className="text-heading">About Me</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
         <div className="flex items-end grid-default-color grid-1">
@@ -18,11 +17,10 @@ const About = () => {
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="headtext">Hi, I'm Monil Chandgadhiya</p>
+            <p className="headtext">Hi, I'm Ali Sanati</p>
             <p className="subtext">
-              Over the past two years, I’ve honed my frontend and backend
-              development skills to build dynamic, high-performing web and
-              software applications.
+              Over the last 4 years, I developed my frontend and backend dev
+              skills to deliver dynamic and software and web applications.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
@@ -63,22 +61,17 @@ const About = () => {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/react.svg"
+              image="assets/logos/csharp-pink.png"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "1deg", top: "70%", left: "25%" }}
-              image="assets/logos/tailwindcss.svg"
+              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
+              image="assets/logos/dotnet-pink.png"
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "-45deg", top: "10%", left: "10%" }}
-              image="assets/logos/blazor.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-15deg", top: "15%", left: "70%" }}
-              image="assets/logos/mongo.png"
+              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+              image="assets/logos/blazor-pink.png"
               containerRef={grid2Container}
             />
           </div>
@@ -107,11 +100,10 @@ const About = () => {
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Tech Stack</p>
+            <p className="headText">Teck Stack</p>
             <p className="subtext">
-              Equipped with a versatile tech stack, I build scalable,
-              high-impact applications that combine performance with great user
-              experience.
+              I specialize in a variety of languages, frameworks, and tools taht
+              allow me to build robust and scalable applications
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">

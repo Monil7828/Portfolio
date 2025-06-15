@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-export const CopyEmailButton = () => {
+const CopyEmailButton = () => {
   const [copied, setCopied] = useState(false);
-  const email = "monilc2801@gmail.com";
+  const email = "Your Email Address";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);

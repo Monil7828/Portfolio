@@ -1,20 +1,14 @@
 import React, { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 
-
-export const Project = ({
+const Project = ({
   title,
   description,
   subDescription,
   href,
   image,
-  screenshots,
   tags,
   setPreview,
-  features,
-  challenges,
-  lessons,
-  demoUrl,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
   return (
@@ -47,13 +41,8 @@ export const Project = ({
           description={description}
           subDescription={subDescription}
           image={image}
-          screenshots={screenshots}
           tags={tags}
           href={href}
-          features={features}
-          challenges={challenges}
-          lessons={lessons}
-          demoUrl={demoUrl}
           closeModal={() => setIsHidden(false)}
         />
       )}
