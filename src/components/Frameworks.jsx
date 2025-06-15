@@ -1,7 +1,7 @@
 // src/components/FrameWorks.jsx
 import  OrbitingCircles  from "./OrbitingCircles";
 
-function FrameWorks() {
+function Frameworks() {
   const skills = [
     "auth0",
     "blazor",
@@ -45,4 +45,4 @@ const Icon = ({ src }) => (
   />
 );
 
-export default FrameWorks;
+export default Frameworks;
