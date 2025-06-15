@@ -1,5 +1,5 @@
 // src/components/FrameWorks.jsx
-import { OrbitingCircles } from "./OrbitingCircles";
+import  OrbitingCircles  from "./OrbitingCircles";
 
 function FrameWorks() {
   const skills = [
