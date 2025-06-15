@@ -1,7 +1,7 @@
 import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
 
-const HeroText = () => {
+export const HeroText = () => {
   const words = ["Secure", "Modern", "Scalable"];
   const variants = {
     hidden: { opacity: 0, x: -50 },

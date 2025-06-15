@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-const Card = ({ style, text, image, containerRef }) => {
+export const Card = ({ style, text, image, containerRef }) => {
   return image && !text ? (
     <motion.img
       className="absolute w-15 cursor-grab"

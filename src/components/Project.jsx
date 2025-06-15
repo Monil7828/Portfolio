@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 
-const Project = ({
+
+export const Project = ({
   title,
   description,
   subDescription,
