@@ -6,7 +6,8 @@ import Experiences from "./sections/Experiences";
 import Testimonial from "./sections/Testimonial";
 import Contact from "./sections/Contact";
 import Footer from './sections/Footer';
-import Navbar from "./sections/navbar";
+import Educations from "./sections/Educations";
+import Navbar from "./sections/Navbar";
 
 const App = () => {
   return (
@@ -15,8 +16,9 @@ const App = () => {
       <Hero />
       <About />
       <Projects />
+      <Educations/>
       <Experiences />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Contact />
       <Footer/>
     </div>

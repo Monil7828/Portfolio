@@ -1,34 +1,36 @@
-import { OrbitingCircles } from "./OrbitingCircles";
+// src/components/FrameWorks.jsx
+import  OrbitingCircles  from "./OrbitingCircles";
 
-export function Frameworks() {
+function Frameworks() {
   const skills = [
     "auth0",
     "blazor",
     "cplusplus",
-    "csharp",
     "css3",
-    "dotnet",
-    "dotnetcore",
+    "mongo",
+    "node",
     "git",
     "html5",
     "javascript",
     "microsoft",
+    "c",
     "react",
-    "sqlite",
+    "firebase",
     "tailwindcss",
     "vitejs",
-    "wordpress",
+    "next",
   ];
+
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
       <OrbitingCircles iconSize={40}>
         {skills.map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} />
+          <Icon key={index} src={`/assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
-        {skills.reverse().map((skill, index) => (
-          <Icon key={index} src={`assets/logos/${skill}.svg`} />
+        {[...skills].reverse().map((skill, index) => (
+          <Icon key={index} src={`/assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
     </div>
@@ -36,5 +38,11 @@ export function Frameworks() {
 }
 
 const Icon = ({ src }) => (
-  <img src={src} className="duration-200 rounded-sm hover:scale-110" />
+  <img 
+    src={src} 
+    className="duration-200 rounded-sm hover:scale-110" 
+    alt="Skill icon"
+  />
 );
+
+export default Frameworks;
